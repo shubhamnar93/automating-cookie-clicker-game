@@ -25,7 +25,7 @@ grandma_upgrade = driver.find_element(By.XPATH, '//*[@id="product1"]')
 
 now= datetime.datetime.now()
 five_minute_from_now=now+datetime.timedelta(minutes=5)
-i=0
+
 while datetime.datetime.now()<five_minute_from_now:
     click_cookie.click()
     cookie = int(driver.find_element(By.XPATH, '//*[@id="cookies"]').text.split()[0].replace(',', ''))
